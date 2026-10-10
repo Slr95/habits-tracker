@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-ink: #2c261f;
+  --color-bark: #3c342c;
+  --color-soil: #5c5346;
+  --color-clay: #6f6558;
+  --color-khaki: #c4b7a3;
+  --color-sand: #e7e0d2;
+  --color-paper: #fbf8f2;
+  --color-foam: #f4efe6;
+  --color-line: #8a8174;
+  --color-bar: #7a7266;
+  --color-background: #e4ddd1;
+  --color-foreground: #2c261f;
+  --font-sans: var(--font-geist-sans), "Segoe UI", sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.sheet-scroll {
+  scrollbar-color: #8a8174 #f4efe6;
 }
